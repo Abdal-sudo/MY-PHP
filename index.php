@@ -60,7 +60,7 @@
     <?php
     $servername = "localhost";
     $username = "root";  
-    $password = "root";  // For XAMPP, leave this blank.
+    $password = "";  // For XAMPP, leave this blank.
     $dbname = "schoolDb";
 
     // Create connection
