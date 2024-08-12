@@ -71,8 +71,21 @@ CREATE TABLE `subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
-
+  --Table structure for table `classtb`
 --
+
+CREATE TABLE `classtb` (
+  `classId` int(11) NOT NULL,
+  `classname` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--Table structure for table `subject`
+
+CREATE TABLE `student` (
+  `subjectId` int(11) NOT NULL,
+  `subjectname` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- Table structure for table `subject_teacher`
 --
 
@@ -101,6 +114,19 @@ CREATE TABLE `teacher` (
 --
 ALTER TABLE `result`
   ADD PRIMARY KEY (`resultId`);
+
+--Indexes for table `student`
+--
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`studentId`);
+
+
+
+
+--Indexes for table `classtb`
+--
+ALTER TABLE `result`
+  ADD PRIMARY KEY (`classId`);
 
 --
 -- Indexes for table `subject`
